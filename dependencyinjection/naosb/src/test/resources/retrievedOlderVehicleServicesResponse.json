@@ -1,0 +1,147 @@
+[
+   {
+      "data":[
+         {
+            "motJSON":[
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"5.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"MOT with Service",
+                  "uniqueId":"3017",
+                  "selectedVehicle":{
+                     "priceAfterDiscount" : "30.00",
+                     "price":"35.00",
+                     "description":"If booked together with a Motorcraft Minor or Major service, enjoy an extra \u00c2\u00a35 off<br\/>Plus earn triple Nectar Points on the MOT (6 points per \u00c2\u00a31 spent)"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+                  
+               }
+            ],
+            "valueServiceJSON":[
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"5.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Minor Service",
+                  "uniqueId":"3004",
+                  "selectedVehicle":{
+                  	 "priceAfterDiscount" : "110.00",
+                     "price":"115.00",
+                     "description":"Minor Service - includes 30-point FORD eCHECK, oil & filter change, fluid top-ups, Ford Roadside Assistance"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               },
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"0.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Major Service",
+                  "uniqueId":"3017",
+                  "selectedVehicle":{
+                     "price":"200.00",
+                     "description":"Major Service - all of the above plus we check your brakes, transmission oil, steering and replace your air filter, spark plugs or fuel filter and more"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               }
+            ],
+            "repairsJSON":[
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"6.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Replace front brake discs & pads",
+                  "uniqueId":"3004",
+                  "selectedVehicle":{
+                  	 "priceAfterDiscount" : "213.00",
+                     "price":"219.00",
+                     "description":"Test Repair Service Description"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               },
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"0.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Replace front brake pads",
+                  "uniqueId":"3013",
+                  "selectedVehicle":{
+                     "price":"95.00",
+                     "description":"Test Repair Service Description"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               },
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"0.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Replace front wiper blades",
+                  "uniqueId":"3022",
+                  "selectedVehicle":{
+                     "price":"25.00",
+                     "description":"Test Repair Service Description"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               },
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"0.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Replace rear brake discs & pads",
+                  "uniqueId":"3031",
+                  "selectedVehicle":{
+                     "price":"189.00",
+                     "description":"Test Repair Service Description"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               },
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"0.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Replace rear brake pads",
+                  "uniqueId":"3040",
+                  "selectedVehicle":{
+                     "price":"89.00",
+                     "description":"Test Repair Service Description"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               },
+               {
+                  "dealerCode":"46396AA",
+                  "discountPrice":"0.00",
+                  "model":"Focus",
+                  "marketCode":"GBR",
+                  "name":"Replace rear wiper blade",
+                  "uniqueId":"3049",
+                  "selectedVehicle":{
+                     "price":"20.00",
+                     "description":"Test Repair Service Description"
+                  },
+                  "locale":"en-gb",
+                  "discountPercentage":"0"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "status":200
+   }
+]

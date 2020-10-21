@@ -1,0 +1,19 @@
+
+def buildVersion = gitVersion()
+
+if (version != buildVersion) {
+  version = buildVersion
+  println "Build Version = $version"
+}
+
+def gitVersion() {
+	def version = shellOutput 'git', 'describe', '--always', '--long'
+	if (!version.contains('-')) version = String.format('build-%s-g%s', shellOutput('git', 'rev-list', '--count', 'HEAD'), version)
+	version
+}
+
+def shellOutput(...args) {
+	def stdOut = new ByteArrayOutputStream()
+	exec { commandLine args; standardOutput = stdOut; workingDir = rootProject.projectDir }
+	stdOut.toString().trim()
+}

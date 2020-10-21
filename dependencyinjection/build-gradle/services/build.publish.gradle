@@ -1,0 +1,37 @@
+apply plugin: 'maven-publish'
+
+if (!commonSettings.disablePublishTestJar) {
+  task makeTestJar(type: Jar)  {
+      from sourceSets.test.output
+      from sourceSets.test.compileClasspath
+      setBaseName "tests-${commonSettings.jarBaseName}"
+  }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+        if (!commonSettings.disablePublishTestJar) {
+          testJar(MavenPublication) {
+              from components.java
+
+              artifacts { archives makeTestJar }
+              artifacts=["build/libs/tests-${commonSettings.jarBaseName}-${project.version}.jar"]
+              setVersion "${project.version}-tests"
+          }
+        }
+    }
+
+	repositories {
+		maven {
+			url "${repository_contextUrl}fordpass_msl_private_release_repository"
+			credentials {
+				username "${repository_user}"
+				password "${repository_password}"
+			}
+		}
+	}
+}
+publish.dependsOn build

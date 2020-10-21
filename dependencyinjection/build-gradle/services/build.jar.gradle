@@ -1,0 +1,12 @@
+jar {
+   baseName = commonSettings.jarBaseName
+   from("manifest-prod-east.yml")
+   from("manifest-prod-west.yml")
+   from("manifest-qa.yml")
+   if (!commonSettings.disableSwagger) {
+     dependsOn asciidoctor
+     from ("${asciidoctor.outputDir}/html5") {
+         into 'static/docs'
+     }
+   }
+}

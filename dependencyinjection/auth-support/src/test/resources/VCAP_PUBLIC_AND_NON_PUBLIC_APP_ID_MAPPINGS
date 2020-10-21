@@ -1,0 +1,55 @@
+{
+  "user-provided": [
+   {
+	    "name": "APPLICATION_ID_MAPPINGS",
+	    "label": "user-provided",
+	    "tags": [],
+	    "credentials": {
+	        "na": {
+	          "Ford": [
+	            "APPID-NA-FORD-1",
+	            "APPID-NA-FORD-2"
+	          ],
+	          "LincolN": [
+	            "APPID-NA-LINCOLN-1"
+	          ],
+	          "InvalidMake": [
+	            "APPID-NA-INVALIDMAKE-1"
+	          ]
+	        },
+	        "EU": {
+	          "Ford": [
+	            "APPID-EU-FORD-1"
+	          ]
+	        },
+	        "AP": {
+	          "Ford": "",
+	          "Lincoln": "APPID-AP-LINCOLN-1"
+	        },
+	        "SA": {
+	          "Ford": [],
+	          "Lincoln": [
+	            "APPID-SA-LINCOLN-1"
+	          ]
+	        },
+	        "InvalidContinent": {
+	          "Ford": [
+	            "APPID-INVALIDCONTINENT-FORD-1"
+	          ],
+	          "Lincoln": null
+	        }
+	    },
+	    "syslog_drain_url": ""
+    },
+    {
+	    "name": "PUBLIC_APP_ID_MAPPINGS",
+	    "label": "user-provided",
+	    "tags": [],
+	    "credentials": {
+	       "EU": ["eu-app-id1", "eu-app-id2", "eu-app-id3"],
+	       "AP": ["ap-app-id1", "ap-app-id2"]
+	     },
+	    "syslog_drain_url": ""
+    }
+  ]
+}

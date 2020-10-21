@@ -1,0 +1,39 @@
+
+
+jar {
+    baseName = 'auth-support'
+}
+
+dependencies {
+
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.cloud:spring-cloud-starter-hystrix")
+    compile("org.springframework.cloud:spring-cloud-starter-sleuth")
+    compile("io.pivotal.spring.cloud:spring-cloud-services-starter-config-client")
+    compile("org.springframework.ws:spring-ws-core")
+    compile("org.apache.httpcomponents:httpclient")
+
+    compile("com.fasterxml.jackson.core:jackson-core")
+    compile("com.fasterxml.jackson.core:jackson-annotations")
+    compile("com.fasterxml.jackson.core:jackson-databind")
+
+    compile("com.microsoft.azure:adal4j")
+	compile("org.projectlombok:lombok")
+	
+	compile("org.springframework.cloud:spring-cloud-cloudfoundry-connector")
+	compile("io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector")
+
+
+    compile project(":base-models")
+
+	testCompile project(":shared-tests").sourceSets.main.output
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.assertj:assertj-core")
+}
+
+task monitoringTest(type: org.gradle.api.tasks.testing.Test) {
+    group 'Verification'
+    useJUnit {
+        includeCategories 'org.springframework.boot.test.context.SpringBootTest'
+    }
+}

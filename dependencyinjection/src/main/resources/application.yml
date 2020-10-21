@@ -1,0 +1,25 @@
+
+# the top of every hour of every day
+rsa-keys-refresh-cron: 0 0 * * * *
+
+# us (default)
+activeDirectoryRemoteRsaKeys.url: https://login.microsoftonline.com/common/discovery/keys
+resourceId: 9c296c36-1b96-451c-963b-3edb5cfc2b44
+
+
+---
+spring.profiles: prod-us
+
+resourceId: 4d37d7f3-7532-4e53-b384-7edd43fd122d
+
+---
+spring.profiles: cn
+
+activeDirectoryRemoteRsaKeys.url: https://login.chinacloudapi.cn/common/discovery/keys
+resourceId: 6bc2ffab-a5ae-4642-9b5f-abf19601f983
+
+---
+spring.profiles: prod-cn
+
+resourceId: 2a6db403-197c-490a-8c74-ca44d7858ff0
+

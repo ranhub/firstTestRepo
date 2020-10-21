@@ -1,0 +1,34 @@
+package com.ford.turbo.servicebooking.models.msl.response;
+
+import com.ford.turbo.servicebooking.models.osb.DealerProfile;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class DealerProfileMslResponse {
+
+    private String dealerName;
+    private String dealerId;
+    private String street;
+    private String town;
+    private String postalCode;
+    private String phone;
+    private String address;
+
+
+    public DealerProfileMslResponse(DealerProfile dealerProfile) {
+    	this.dealerId = dealerProfile.getDealerCode();
+        this.dealerName = dealerProfile.getDealerName();
+        this.street = dealerProfile.getStreet();
+        this.town = dealerProfile.getTown();
+        this.postalCode = dealerProfile.getPostalCode();
+        this.phone = dealerProfile.getPhone();
+    }
+ 
+}

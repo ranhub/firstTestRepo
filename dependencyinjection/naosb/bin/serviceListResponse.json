@@ -1,0 +1,148 @@
+{
+   "requestStatus":null,
+   "error":null,
+   "lastRequested":null,
+   "main":[
+      {
+         "name":"5 Year/62,500 Mile Service",
+         "subType":"Minor",
+         "price":186.0,
+         "serviceId":"55009529",
+         "description":"",
+         "applicationInformation":"20"
+      },
+      {
+         "name":"6 Year/75,000 Mile Service",
+         "subType":"Major",
+         "price":566.4,
+         "serviceId":"55011743",
+         "description":"",
+         "applicationInformation":"10"
+      }
+      
+   ],
+   "additional":[
+      {
+         "name":"Seasonal Check",
+         "price":20.05,
+         "serviceId":"1",
+         "description":"Try out the new, innovative Ford Econo Check and see for yourself how easy it can be to reduce your Ford's fuel consumption. And also reduce your carbon footprint.",
+         "applicationInformation":null
+      },
+      {
+         "name":"Full Air Conditioning Service",
+         "price":15.0,
+         "serviceId":"2",
+         "description":"The air conditioning system in your Ford must be serviced at regular intervals. Your Ford Dealer offers you a comprehensive air conditioning check at a price that won?t hurt your wallet.",
+         "applicationInformation":null
+      },
+      {
+         "name":"Front Wiper Blade Change",
+         "price":28.0,
+         "serviceId":"3",
+         "description":"Keep your wiper blades in good condition to be sure to keep a clear view: you might not use your wiper blades every single day, but day in, day out they are exposed to the weather, sunlight and chemical elements in the air.",
+         "applicationInformation":null
+      },
+      {
+         "name":"Ford Mobile Servicing",
+         "price":12.0,
+         "serviceId":"5",
+         "description":"To drive safely, you need the right tyres in good condition, as they affect the steering, braking and acceleration of your vehicle. Worn tyres make it less predictable to drive and more likely to skid.",
+         "applicationInformation":null
+      },
+      {
+         "name":"Courtesy Car",
+         "price":50.0,
+         "serviceId":"6",
+         "description":"Stay mobile while your Ford is in the best hands with your Ford Dealer. Along with booking a service, make a reservation for a courtesy car while yours is being serviced.",
+         "applicationInformation":null
+      },
+      {
+         "name":"Car Wash",
+         "price":99999.0,
+         "serviceId":"7",
+         "description":"We'll thoroughly wash your vehicle, removing all surface dirt with foams which are tough on dirt but gentle on paintwork and don't harm the environment.",
+         "applicationInformation":null
+      },
+      {
+         "name":"Interim Check (Commercials only)",
+         "price":10.0,
+         "serviceId":"8",
+         "description":"Your dealer can perform additional checks and changes at the same time as your scheduled service, to refresh and enhance your driving experience.",
+         "applicationInformation":null
+      }
+   ],"oldServices":[
+      {
+         "price":null,
+         "name":"MOT with Service",
+         "serviceId":"3019:MOT",
+         "description":null,
+         "discountPrice": "10.00",
+         "discountPercentage": "1"
+      },
+      {
+         "price":null,
+         "name":"Minor Service",
+         "serviceId":"3006:VALUE",
+         "description":null,
+         "discountPrice": "0.00",
+         "discountPercentage": "0"
+      },
+      {
+         "price":null,
+         "name":"Major Service",
+         "serviceId":"3019:VALUE",
+         "description":null,
+         "discountPrice": "0.00",
+         "discountPercentage": "0"
+      },
+      {
+         "price":null,
+         "name":"Replace front brake discs & pads",
+         "serviceId":"3006:REPAIR",
+         "description":null,
+         "discountPrice": "0.00",
+         "discountPercentage": "0"
+      },
+      {
+         "price":null,
+         "name":"Replace front brake pads",
+         "serviceId":"3015:REPAIR",
+         "description":null,
+         "discountPrice": "0.00",
+         "discountPercentage": "0"
+      },
+      {
+         "price":null,
+         "name":"Replace front wiper blades",
+         "serviceId":"3024:REPAIR",
+         "description":null,
+         "discountPrice": "0.00",
+         "discountPercentage": "0"
+      },
+      {
+         "price":null,
+         "name":"Replace rear brake discs & pads",
+         "serviceId":"3033:REPAIR",
+         "description":null,
+         "discountPrice": "0.00",
+         "discountPercentage": "0"
+      }
+   ],
+   "vehicleDetails":{
+      "engine":"2.0L Duratorq DOHC(150/163PS)-DW10C",
+      "registrationNumber":null,
+      "color":"Moondust Silver (Metallic)",
+      "transmission":"6 Speed Powershift 6DCT450 - MPS6",
+      "vehicleLineCode":"VLA20",
+      "mileageInMiles":6214,
+      "bodyStyle":"5 Door Saloon",
+      "fuelType":"Diesel",
+      "mileageInKm":10000,
+      "modelName":"Mondeo 2007-2014",
+      "version":"Series 66",
+      "vin":"WF0EXXGBBEAG33487",
+      "buildDate":"2010-12",
+      "transmissionType":null
+   }
+}

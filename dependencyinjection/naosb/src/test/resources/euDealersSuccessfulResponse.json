@@ -1,0 +1,53 @@
+{
+    "error": null,
+    "data": [
+        {
+            "dealerName": "Gowrings Ford - Reading",
+            "dealerCode": "44426DA"
+        },
+        {
+            "dealerName": "Haynes of Maidstone",
+            "dealerCode": "46105AA"
+        },
+        {
+            "dealerName": "Haynes of Maidstone",
+            "dealerCode": "46105BA"
+        },
+        {
+            "dealerName": "Invicta Motors - Canterbury",
+            "dealerCode": "46106AA"
+        },
+        {
+            "dealerName": "Invicta Motors - Margate",
+            "dealerCode": "46106CA"
+        },
+        {
+            "dealerName": "Invicta Motors - Ashford",
+            "dealerCode": "46106DA"
+        },
+        {
+            "dealerName": "Dees of Croydon",
+            "dealerCode": "46396AA"
+        },
+        {
+            "dealerName": "Dees of Wimbledon",
+            "dealerCode": "46396BA"
+        },
+        {
+            "dealerName": "Brownes of London - Brixton",
+            "dealerCode": "46396BC"
+        },
+        {
+            "dealerName": "Dees of Croydon",
+            "dealerCode": "46396CA"
+        },
+        {
+            "dealerName": "Allen Ford - Northampton",
+            "dealerCode": "81810FA"
+        },
+        {
+            "dealerName": "Allen Ford - Bath",
+            "dealerCode": "83883DA"
+        }
+    ]
+}

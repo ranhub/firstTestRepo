@@ -1,0 +1,58 @@
+apply plugin: 'jacoco'
+apply plugin: 'org.sonarqube'
+
+if (!commonSettings.containsKey('jacocoExcludes'))
+  commonSettings.jacocoExcludes = ['**/wsdl/*', '**/loadtest/*', '**/model','**/acceptance', '**/models/**', '**/load','**/test/**','**/*Application*','**/*Config*']
+
+sonarqube {
+    properties {
+        property 'sonar.jacoco.reportPath', "build/jacoco/test.exec"
+        property 'sonar.java.coveragePlugin', 'jacoco'
+        property "sonar.exclusions", "target/generated-sources/**, src/main/java/com/ford/turbo/**/loadtest/**, src/main/java/com/ford/turbo/**/model/**"
+        property "sonar.host.url", "${sonarqube_url}"
+        property "sonar.login", "admin"
+        property "sonar.password", "xtremer1"
+    }
+}
+
+task jacocoCoverallsTestReport(type: JacocoReport) {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+    classDirectories = fileTree(
+            dir: './build/classes',
+            excludes: commonSettings.jacocoExcludes
+            )
+    sourceDirectories = files('src/main/java')
+    executionData = files("build/jacoco/test.exec")
+}
+
+
+jacocoTestCoverageVerification{
+
+   // print 'Coverage Ratio is '${COVERAGE_RATIO}
+
+    afterEvaluate {
+        classDirectories = files(classDirectories.files.collect {
+            fileTree(dir: it, excludes: commonSettings.jacocoExcludes )
+        })
+    }
+
+    violationRules{
+        failOnViolation = true
+        rule {
+            limit {
+                counter = 'INSTRUCTION'
+                value = 'COVEREDRATIO'
+                minimum = new BigDecimal("${COVERAGE_RATIO}")
+            }
+        }
+
+    }
+}
+
+tasks.test.finalizedBy tasks.jacocoCoverallsTestReport
+tasks.jacocoCoverallsTestReport.finalizedBy tasks.jacocoTestCoverageVerification

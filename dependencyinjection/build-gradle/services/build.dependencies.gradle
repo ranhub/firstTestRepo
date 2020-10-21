@@ -1,0 +1,68 @@
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+	//mavenLocal() 
+
+	maven {
+		url "${repository_contextUrl}ford_released_artifacts"
+		credentials {
+			username = "${repository_user}"
+			password = "${repository_password}"
+		}
+	}
+	
+    maven {
+        url "${repository_contextUrl}fordpass_msl_private_release_repository"
+        credentials {
+            username = "${repository_user}"
+            password = "${repository_password}"
+        }
+    }
+	
+    maven { url 'https://repo.spring.io/libs-release' }
+    maven { url 'http://www.soapui.org/repository/maven2' }
+}
+
+dependencyManagement {
+    imports {
+        //https://docs.pivotal.io/spring-cloud-services/1-3/common/client-dependencies.html
+        //http://projects.spring.io/spring-cloud/
+        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Edgware.SR1'
+        mavenBom 'io.pivotal.spring.cloud:spring-cloud-services-dependencies:1.6.1.RELEASE'
+        mavenBom "org.springframework.boot:spring-boot-dependencies:${spring_boot_version}"
+    }
+    dependencies {
+      dependency 'org.projectlombok:lombok:1.16.6'
+      dependency 'com.github.kstyrc:embedded-redis:0.6'
+      dependency 'com.jayway.jsonpath:json-path-assert:2.2.0'
+      dependency 'com.jayway.jsonpath:json-path:2.2.0'
+
+      dependency 'io.springfox:springfox-staticdocs:2.5.0'
+      dependency 'io.springfox:springfox-swagger-ui:2.5.0'
+      dependency 'io.springfox:springfox-swagger2:2.5.0'
+
+      dependency 'org.assertj:assertj-core:3.3.0'
+      dependency 'com.nimbusds:nimbus-jose-jwt:4.11'
+
+      dependency 'com.google.guava:guava:19.0'
+      dependency 'org.thymeleaf:thymeleaf:3.0.1.RELEASE'
+      dependency 'org.thymeleaf:thymeleaf-spring4:3.0.1.RELEASE'
+      dependency 'net.minidev:json-smart:2.2.1'
+
+      dependency 'com.smartbear.soapui:soapui:5.2.1'
+      dependency 'org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1'
+
+      dependency 'com.microsoft.azure:adal4j:1.1.2'
+
+      dependency 'com.ford.cloudnative:activedirectory-spring-oauth2-service:1.1.0-RELEASE'
+    }
+}
+
+configurations.all {
+  resolutionStrategy {
+    dependencySubstitution {
+      //bug in 1.2.0.RELEASE that impacts circuit-breaker - addressed in 1.2.1.RELEASE
+      substitute module('org.springframework.cloud:spring-cloud-commons:1.2.0.RELEASE') with module('org.springframework.cloud:spring-cloud-commons:1.2.1.RELEASE')
+    }
+  }
+}

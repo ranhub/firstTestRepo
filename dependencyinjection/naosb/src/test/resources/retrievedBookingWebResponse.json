@@ -1,0 +1,110 @@
+{
+	"appointmentTime": "15-05-2018T15:30:00",
+	"dealerProfile": 
+	{
+		"street": "2 Imperial Way",
+		"dealerName": "Dees of Croydon",
+		"dealerCode": "46396AA",
+		"district": null,
+		"phone": "0208 226 3476",
+		"openingHours": 
+		{
+			"sunday": "",
+			"monday": "0730 - 1800",
+			"wednesday": "0730 - 1800",
+			"saturday": "0800 - 1600",
+			"thursday": "0730 - 1800",
+			"tuesday": "0730 - 1800",
+			"friday": "0730 - 1800"
+		},
+
+		"town": "Croydon",
+		"country": null,
+		"postalCode": "CR0 4RR",
+		"email": "mgrif133@ford.com"
+	},
+
+	"previousBooking": true,
+	"bookingReferenceNumber": "1525451390351",
+	"comments": "Courtesy Car requested ...",
+	"oldServices": 
+	[
+		{
+			"serviceId": "3002",
+			"priceAfterDiscount": null,
+			"discountPrice": null,
+			"price": 175,
+			"subType": "REPAIR",
+			"discountPercentage": null,
+			"name": "Replace front brake discs & pads",
+			"description": null
+		},
+
+		{
+			"serviceId": "3098",
+			"priceAfterDiscount": null,
+			"discountPrice": null,
+			"price": 349,
+			"subType": "REPAIR",
+			"discountPercentage": null,
+			"name": "Replace timing belt **",
+			"description": null
+		},
+
+		{
+			"serviceId": "3015",
+			"priceAfterDiscount": null,
+			"discountPrice": null,
+			"price": 30,
+			"subType": "MOT",
+			"discountPercentage": null,
+			"name": "MOT with Service",
+			"description": null
+		}
+	],
+
+	"additionalServices": null,
+	"vehicleDetails": 
+	{
+		"modelName": "Fiesta",
+		"buildDate": "2013-01",
+		"engine": "2.0L Duratorq DOHC(150/163PS)-DW10C",
+        "registrationNumber": null,
+        "color": "Panther Black (Metallic)",
+        "transmission": "6 Speed Powershift 6DCT450 - MPS6",
+        "vehicleLineCode": "VLB80",
+        "mileageInMiles": "5200",
+        "bodyStyle": "5 Door Saloon",
+        "fuelType": "Diesel",
+        "mileageInKm": "8369",
+        "version": "Series 40",
+        "vin": "WF0KXXGCBKCC22754",
+        "transmissionType": null
+	},
+
+	"mainService": 
+	{
+		"serviceId": "66666",
+		"priceAfterDiscount": null,
+		"discountPrice": null,
+		"price": -1,
+		"discountPercentage": null,
+		"subType": "OTHER",
+		"name": "General Appointment Booking",
+		"description": "General Appointment Booking",
+		"applicationInformation": null
+	},
+
+	"voucherCodes": null,
+	"vehicleLineDescription": "Fiesta",
+	"customer": 
+	{
+		"lastName": "eu",
+		"title": "Mr.",
+		"contactNumber": "1884873408",
+		"firstName": "ranjith",
+		"email": "rkottapa@ford.com",
+		"phone": "1884873408"
+	}
+}
+

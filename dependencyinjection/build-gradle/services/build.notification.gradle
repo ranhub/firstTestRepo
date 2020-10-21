@@ -1,0 +1,14 @@
+apply plugin: 'notification'
+
+notification {
+    email {
+        subscriberList = "${notification_email_subscriberList}"
+        applicationName = "MSL ${commonSettings.applicationName}"
+        subject = "MSL ${commonSettings.applicationName} Deployed to QA"
+        version = project.version
+
+        host = "${notification_email_host}"
+        username = "${notification_email_username}"
+        password = "${notification_email_password}"
+    }
+}

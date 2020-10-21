@@ -1,0 +1,17 @@
+
+
+ext.extDependencyModules = [
+  [group: 'com.ford.turbo.gradle', name: 'turbo-notification-gradle-plugin', version: '1.0.14'],
+  [group: 'com.ford.turbo.gradle', name: 'turbo-jaxb-gradle-plugin', version: '1.0.7'],
+
+  [group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: "$spring_boot_version"],
+  [group: 'io.spring.gradle', name: 'dependency-management-plugin', version: '0.5.2.RELEASE'],
+
+  [group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '3.1.2'],
+  [group: 'org.asciidoctor', name: 'asciidoctor-gradle-plugin', version: '1.5.3'],
+
+  [group: 'org.sonarsource.scanner.gradle', name: 'sonarqube-gradle-plugin', version: '2.6.2'],
+
+  [group: 'org.springframework.build.gradle', name: 'propdeps-plugin', version: '0.0.7'],
+  [group: 'com.moowork.gradle', name: 'gradle-node-plugin', version: '0.13']
+]

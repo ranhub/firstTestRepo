@@ -1,0 +1,21 @@
+repositories {
+    mavenCentral()
+    maven {
+    	url "${repository_contextUrl}ford_released_artifacts"
+    	credentials {
+    		username = "${repository_user}"
+    				password = "${repository_password}"
+    	}
+    }
+
+	maven {
+        url "${repository_contextUrl}fordpass_msl_private_release_repository"
+        credentials {
+            username = "${repository_user}"
+            password = "${repository_password}"
+        }
+//        name = "turbo-artifactory"
+    }
+    maven { url 'http://repo.spring.io/plugins-release' }
+}
+ext.extRepositories = repositories

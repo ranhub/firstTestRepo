@@ -1,0 +1,5 @@
+processResources.doLast {
+    println "Setting spring.application.version to " + "${project.version}"
+    File properties = file('build/resources/main/application.properties')
+    properties.append("\nspring.application.version=${project.version}")
+}

@@ -1,0 +1,18 @@
+
+buildscript {
+    apply from: "../$build_gradle_scripts/services/buildscript.repositories.gradle"
+    repositories.addAll(extRepositories)
+    
+    apply from: "../$build_gradle_scripts/services/buildscript.dependencies.gradle"
+    dependencies { extDependencyModules.each {classpath(it)} }
+}
+
+dependencies {
+	def commonLibVersion = '0.0.3-667-gd6f03b0'
+    compile("com.ford.turbo:auth-support:${commonLibVersion}")
+    compile("com.ford.turbo:base-models:${commonLibVersion}")
+    compile project(':osb-commons')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile("com.ford.turbo:shared-tests:${commonLibVersion}")
+	testCompile('org.assertj:assertj-core')
+}

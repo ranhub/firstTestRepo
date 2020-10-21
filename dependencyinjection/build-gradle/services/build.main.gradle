@@ -1,0 +1,81 @@
+
+/**********************************************************************
+ * Project
+ **********************************************************************/
+apply plugin: 'java'
+
+group = 'com.ford.turbo'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+/**********************************************************************
+ * External
+ **********************************************************************/
+def scriptsDir = "${rootProject.projectDir}/$build_gradle_scripts/services"
+
+commonSettings.disableSpringBoot || apply(from: "${scriptsDir}/build.spring.gradle")
+commonSettings.disableDependencyManagement || apply(from: "${scriptsDir}/build.dependencies.gradle")
+commonSettings.disableGitVersion || apply (from: "${scriptsDir}/build.git-version.gradle")
+commonSettings.disableXBuildVersion || apply (from: "${scriptsDir}/build.x-build-version.gradle")
+commonSettings.disablePublish || apply (from: "${scriptsDir}/build.publish.gradle")
+commonSettings.disableSonarQube || apply (from: "${scriptsDir}/build.sonarqube.gradle")
+commonSettings.disableSwagger || apply (from: "${scriptsDir}/build.swagger.gradle")
+commonSettings.disableJar || apply (from: "${scriptsDir}/build.jar.gradle")
+!commonSettings.enableNotification || apply (from: "${scriptsDir}/build.notification.gradle")
+
+
+/**********************************************************************
+ * Test
+ **********************************************************************/
+tasks.withType(Test) {
+	systemProperties System.properties
+  testLogging {
+      exceptionFormat = 'full'
+
+      def envShowStandardStreams = (System.getenv('LOGGING_SHOW_STANDARD_STREAMS') ?: '').trim().toLowerCase()
+      if (envShowStandardStreams == 'true' || envShowStandardStreams == '1') {
+        showStandardStreams = true
+      }
+  }
+}
+
+test {
+    useJUnit {
+        excludeCategories 'com.ford.turbo.common.basemodels.annotations.AcceptanceTest'
+    }
+}
+
+task acceptanceTest(type: Test) {
+    group 'Verification'
+    useJUnit {
+        includeCategories 'com.ford.turbo.common.basemodels.annotations.AcceptanceTest'
+    }
+}
+
+
+/**********************************************************************
+ * Other
+ **********************************************************************/
+ clean.doFirst {
+     delete 'target'
+ }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.5'
+}
+
+
+/**********************************************************************
+ * IDE
+ **********************************************************************/
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+eclipse {
+    classpath {
+        containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
+        containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
+    }
+}

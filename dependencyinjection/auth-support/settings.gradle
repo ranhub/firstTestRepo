@@ -1,0 +1,3 @@
+rootProject.name = 'auth-support'
+include ':base-models'
+project(':base-models').projectDir = new File(settingsDir, '../base-models')

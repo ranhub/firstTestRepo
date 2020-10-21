@@ -1,0 +1,362 @@
+{
+    "error": null,
+    "data": [
+        {
+            "dealerProfile": {
+                "street": "2 Imperial Way",
+                "dealerName": "Dees of Croydon",
+                "dealerCode": "46396AA",
+                "openingHoursServiceSunday": "",
+                "district": null,
+                "phone": "0208 226 3476",
+                "openingHoursServiceMonday": "0730 - 1800",
+                "openingHoursServiceTuesday": "0730 - 1800",
+                "town": "Croydon",
+                "country": null,
+                "openingHoursServiceSaturday": "0800 - 1600",
+                "postalCode": "CR0 4RR",
+                "openingHoursServiceWednesday": "0730 - 1800",
+                "openingHoursServiceThursday": "0730 - 1800",
+                "email": "mgrif133@ford.com",
+                "openingHoursServiceFriday": "0730 - 1800"
+            },
+            "additionalServices": [
+                {
+                    "serviceId": "1",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 12,
+                    "selected": false,
+                    "name": "Seasonal Check",
+                    "description": "Try out the new, innovative Ford Econo Check and see for yourself how easy it can be to reduce your Ford's fuel consumption. And also reduce your carbon footprint."
+                },
+                {
+                    "serviceId": "2",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 29,
+                    "selected": false,
+                    "name": "Full Air Conditioning Service",
+                    "description": "The air conditioning system in your Ford must be serviced at regular intervals. Your Ford Dealer offers you a comprehensive air conditioning check at a price that won?t hurt your wallet."
+                },
+                {
+                    "serviceId": "3",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 30,
+                    "selected": false,
+                    "name": "Front Wiper Blade Change",
+                    "description": "Keep your wiper blades in good condition to be sure to keep a clear view: you might not use your wiper blades every single day, but day in, day out they are exposed to the weather, sunlight and chemical elements in the air."
+                },
+                {
+                    "serviceId": "5",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 5,
+                    "selected": false,
+                    "name": "Ford Mobile Servicing",
+                    "description": "To drive safely, you need the right tyres in good condition, as they affect the steering, braking and acceleration of your vehicle. Worn tyres make it less predictable to drive and more likely to skid."
+                },
+                {
+                    "serviceId": "6",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 40,
+                    "selected": false,
+                    "name": "Courtesy Car",
+                    "description": "Stay mobile while your Ford is in the best hands with your Ford Dealer. Along with booking a service, make a reservation for a courtesy car while yours is being serviced."
+                },
+                {
+                    "serviceId": "7",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 6,
+                    "selected": false,
+                    "name": "Car Wash",
+                    "description": "We'll thoroughly wash your vehicle, removing all surface dirt with foams which are tough on dirt but gentle on paintwork and don't harm the environment."
+                },
+                {
+                    "serviceId": "8",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 10,
+                    "selected": false,
+                    "name": "Interim Check (Commercials only)",
+                    "description": "Your dealer can perform additional checks and changes at the same time as your scheduled service, to refresh and enhance your driving experience."
+                },
+                {
+                    "serviceId": "9",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 30,
+                    "selected": false,
+                    "name": "MOT With Service",
+                    "description": "You will get extra discount if you book MOT with any service and The compulsory MoT test certifies that your vehicle meets the necessary safety and roadworthiness requirements. The test has to be performed every year on vehicles over three years old."
+                },
+                {
+                    "serviceId": "10",
+                    "priceAfterDiscount": 0.12,
+					"discountPrice": 12.34,
+					"discountPercentage": 24,
+                    "price": 23,
+                    "selected": false,
+                    "name": "MOT Emissions Test",
+                    "description": "The compulsory MoT Emissions test certifies that your vehicle meets the necessary safety and roadworthiness requirements. The test has to be performed every year on vehicles over three years old."
+                },
+                {
+                    "serviceId": 99,
+                    "priceAfterDiscount": null,
+					"discountPrice": null,
+					"discountPercentage": null,
+                    "price": -1,
+                    "selected": false,
+                    "name": "Tyre Replacement",
+                    "description": "description for tyre replacement"
+                }
+            ],
+            "oldServices": [
+                {
+                    "serviceId": "3002",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 185,
+                    "subType": "REPAIR",
+                    "discountPercentage": 0,
+                    "name": "Replace front brake discs & pads",
+                    "description": "Test Repair Service Description"
+                },
+                {
+                    "serviceId": "3011",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 189,
+                    "subType": "REPAIR",
+                    "discountPercentage": 0,
+                    "name": "Replace front brake pads",
+                    "description": "Test Repair Service Description"
+                },
+                {
+                    "serviceId": "3020",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 121,
+                    "subType": "REPAIR",
+                    "discountPercentage": 0,
+                    "name": "Replace front wiper blades",
+                    "description": "Test Repair Service Description"
+                },
+                {
+                    "serviceId": "3002",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 85,
+                    "subType": "MOT",
+                    "discountPercentage": 0,
+                    "name": "Stand-alone MOT",
+                    "description": "If booked together with a Motorcraft Minor or Major service, enjoy an extra Â£5 off<br/>Plus earn triple Nectar Points on the MOT (6 points per Â£1 spent)"
+                },
+                {
+                    "serviceId": "3015",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 35,
+                    "subType": "MOT",
+                    "discountPercentage": 0,
+                    "name": "MOT with Service",
+                    "description": "If booked together with a Motorcraft Minor or Major service, enjoy an extra Â£5 off<br/>Plus earn triple Nectar Points on the MOT (6 points per Â£1 spent)"
+                },
+                {
+                    "serviceId": "3052",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 5,
+                    "subType": "VALUE",
+                    "discountPercentage": 0,
+                    "name": "General Appointment",
+                    "description": null
+                }
+            ],
+            "dealerCode": "46396AA",
+            "mainServices": [
+                {
+                    "serviceId": "55016365",
+                    "price": 275,
+                    "subType": "MAJOR",
+                    "name": "8 Years /100000 Miles Major Service  ",
+                    "description": "{\"Abstract\":\"<p><strong>Major Service:<\\/strong> A major Service is the most comprehensive service offered by Ford, ensuring your car is kept in optimal condition.<\\/p><br><p><strong>Interim\\/Standard Service:<\\/strong> An Interim Service is performed by Ford-trained technicians and ensures your Ford will continue to perform perfectly.<\\/p><br><strong>Undefined Service: <\\/strong>Having your Ford serviced regularly at one of our Dealers can help to maintain its efficiency, improving fuel economy and reducing CO2 emissions.\",\"Title\":\"Main service description\"}",
+                    "applicationInformation": "11"
+                },
+                {
+                    "serviceId": "66666",
+                    "price": 0,
+                    "subType": "OTHER",
+                    "name": "General Appointment Booking",
+                    "description": "{\"Abstract\":\"<p><strong>Major Service:<\\/strong> A major Service is the most comprehensive service offered by Ford, ensuring your car is kept in optimal condition.<\\/p><br><p><strong>Interim\\/Standard Service:<\\/strong> An Interim Service is performed by Ford-trained technicians and ensures your Ford will continue to perform perfectly.<\\/p><br><strong>Undefined Service: <\\/strong>Having your Ford serviced regularly at one of our Dealers can help to maintain its efficiency, improving fuel economy and reducing CO2 emissions.\",\"Title\":\"Main service description\"}",
+                    "applicationInformation": "00"
+                }
+            ],
+            "marketCode": "GBR"
+        },
+        {
+            "dealerProfile": {
+                "street": "67 Plough Lane",
+                "dealerName": "Dees of Wimbledon",
+                "dealerCode": "46396BA",
+                "openingHoursServiceSunday": "",
+                "district": null,
+                "phone": "0208 226 3479",
+                "openingHoursServiceMonday": "0800 - 1800",
+                "openingHoursServiceTuesday": "0800 - 1800",
+                "town": "Wimbledon",
+                "country": null,
+                "openingHoursServiceSaturday": "0800 - 1600",
+                "postalCode": "SW17 0BN",
+                "openingHoursServiceWednesday": "0800 - 1800",
+                "openingHoursServiceThursday": "0800 - 1800",
+                "email": "vsowjan1@ford.com",
+                "openingHoursServiceFriday": "0800 - 1800"
+            },
+            "additionalServices": [
+                {
+                    "serviceId": "1",
+                    "price": 100,
+                    "selected": false,
+                    "name": "Seasonal Check",
+                    "description": "Try out the new, innovative Ford Econo Check and see for yourself how easy it can be to reduce your Ford's fuel consumption. And also reduce your carbon footprint."
+                },
+                {
+                    "serviceId": "2",
+                    "price": 75,
+                    "selected": false,
+                    "name": "Full Air Conditioning Service",
+                    "description": "The air conditioning system in your Ford must be serviced at regular intervals. Your Ford Dealer offers you a comprehensive air conditioning check at a price that won?t hurt your wallet."
+                },
+                {
+                    "serviceId": "3",
+                    "price": 20,
+                    "selected": false,
+                    "name": "Front Wiper Blade Change",
+                    "description": "Keep your wiper blades in good condition to be sure to keep a clear view: you might not use your wiper blades every single day, but day in, day out they are exposed to the weather, sunlight and chemical elements in the air."
+                },
+                {
+                    "serviceId": "5",
+                    "price": 14,
+                    "selected": false,
+                    "name": "Ford Mobile Servicing",
+                    "description": "To drive safely, you need the right tyres in good condition, as they affect the steering, braking and acceleration of your vehicle. Worn tyres make it less predictable to drive and more likely to skid."
+                },
+                {
+                    "serviceId": "7",
+                    "price": 10,
+                    "selected": false,
+                    "name": "Car Wash",
+                    "description": "We'll thoroughly wash your vehicle, removing all surface dirt with foams which are tough on dirt but gentle on paintwork and don't harm the environment."
+                },
+                {
+                    "serviceId": "8",
+                    "price": 0,
+                    "selected": false,
+                    "name": "Interim Check (Commercials only)",
+                    "description": "Your dealer can perform additional checks and changes at the same time as your scheduled service, to refresh and enhance your driving experience."
+                },
+                {
+                    "serviceId": 99,
+                    "price": -1,
+                    "selected": false,
+                    "name": "Tyre Replacement",
+                    "description": "description for tyre replacement"
+                }
+            ],
+            "oldServices": [
+                {
+                    "serviceId": "3002",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 175,
+                    "subType": "REPAIR",
+                    "discountPercentage": 0,
+                    "name": "Replace front brake discs & pads",
+                    "description": null
+                },
+                {
+                    "serviceId": "3011",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 89,
+                    "subType": "REPAIR",
+                    "discountPercentage": 0,
+                    "name": "Replace front brake pads",
+                    "description": null
+                },
+                {
+                    "serviceId": "3020",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 22,
+                    "subType": "REPAIR",
+                    "discountPercentage": 0,
+                    "name": "Replace front wiper blades",
+                    "description": null
+                },
+                {
+                    "serviceId": "3002",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 35,
+                    "subType": "MOT",
+                    "discountPercentage": 0,
+                    "name": "Stand-alone MOT",
+                    "description": "If booked together with a Motorcraft Minor or Major service, enjoy an extra Â£5 off<br/>Plus earn triple Nectar Points on the MOT (6 points per Â£1 spent)"
+                },
+                {
+                    "serviceId": "3015",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 35,
+                    "subType": "MOT",
+                    "discountPercentage": 0,
+                    "name": "MOT with Service",
+                    "description": "If booked together with a Motorcraft Minor or Major service, enjoy an extra Â£5 off<br/>Plus earn triple Nectar Points on the MOT (6 points per Â£1 spent)"
+                },
+                {
+                    "serviceId": "3052",
+                    "priceAfterDiscount": null,
+                    "discountPrice": 0,
+                    "price": 0,
+                    "subType": "VALUE",
+                    "discountPercentage": 0,
+                    "name": "General Appointment",
+                    "description": null
+                }
+            ],
+            "dealerCode": "46396BA",
+            "mainServices": [
+                {
+                    "serviceId": "55016365",
+                    "price": 275,
+                    "subType": "MAJOR",
+                    "name": "8 Years /100000 Miles Major Service  ",
+                    "description": "{\"Abstract\":\"<p><strong>Major Service:<\\/strong> A major Service is the most comprehensive service offered by Ford, ensuring your car is kept in optimal condition.<\\/p><br><p><strong>Interim\\/Standard Service:<\\/strong> An Interim Service is performed by Ford-trained technicians and ensures your Ford will continue to perform perfectly.<\\/p><br><strong>Undefined Service: <\\/strong>Having your Ford serviced regularly at one of our Dealers can help to maintain its efficiency, improving fuel economy and reducing CO2 emissions.\",\"Title\":\"Main service description\"}",
+                    "applicationInformation": "11"
+                },
+                {
+                    "serviceId": "66666",
+                    "price": 0,
+                    "subType": "OTHER",
+                    "name": "General Appointment Booking",
+                    "description": "{\"Abstract\":\"<p><strong>Major Service:<\\/strong> A major Service is the most comprehensive service offered by Ford, ensuring your car is kept in optimal condition.<\\/p><br><p><strong>Interim\\/Standard Service:<\\/strong> An Interim Service is performed by Ford-trained technicians and ensures your Ford will continue to perform perfectly.<\\/p><br><strong>Undefined Service: <\\/strong>Having your Ford serviced regularly at one of our Dealers can help to maintain its efficiency, improving fuel economy and reducing CO2 emissions.\",\"Title\":\"Main service description\"}",
+                    "applicationInformation": "00"
+                }
+            ],
+            "marketCode": "GBR"
+        }
+    ]
+}

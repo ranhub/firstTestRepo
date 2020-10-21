@@ -1,0 +1,17 @@
+
+buildscript {
+    apply from: "../$build_gradle_scripts/services/buildscript.repositories.gradle"
+    repositories.addAll(extRepositories)
+    
+    apply from: "../$build_gradle_scripts/services/buildscript.dependencies.gradle"
+    dependencies { extDependencyModules.each {classpath(it)} }
+}
+
+dependencies {
+	def commonLibVersion = '0.0.3-622-gf408783'
+    compile("com.ford.turbo:auth-support:${commonLibVersion}")
+    compile("com.ford.turbo:base-models:${commonLibVersion}")
+    compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
+	testCompile("com.ford.turbo:shared-tests:${commonLibVersion}")
+	testCompile('org.assertj:assertj-core')
+}
